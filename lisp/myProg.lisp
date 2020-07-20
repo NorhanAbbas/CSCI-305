@@ -1,0 +1,21 @@
+(defun palindrome (userInput)
+           (equal userInput (meh  userInput)))
+
+(defun meh (l)
+  (cond ((null l) nil)
+    (t (append (meh (cdr l)) (list (car l))))))
+
+;(format t "Enter a string please ~%")
+;(defvar userInput (read))
+;(setq userInput (write-to-string userInput))
+
+;(write (palindrome '(userInput) ))
+(write (palindrome '(a b b a) ))
+(terpri)
+(write (palindrome '(a b c b a) ))
+(terpri)
+(write (palindrome '(a b c) ))
+(terpri)
+(write (palindrome '(a (d e) b (d e) a) ))
+(terpri)
+(write (palindrome '(a (d e) b (e d) a) ))
